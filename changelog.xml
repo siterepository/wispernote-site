@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DESIGN-PROGRAM.md §3.10 — "RSS at /changelog.xml".
+
+  A static file, because the site is a static export (next.config.ts sets
+  `output: 'export'`) and a route handler would be a server. It carries the
+  same entries as /changelog and nothing else: there is no release yet, so
+  there is no release item here either. The release job appends an <item> per
+  release when it appends the entry to apps/web/src/app/changelog/entries.ts;
+  the two are regenerated together or they drift.
+-->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wisper Note — Changelog</title>
+    <link>https://wispernote.com/changelog/</link>
+    <atom:link href="https://wispernote.com/changelog.xml" rel="self" type="application/rss+xml" />
+    <description>Every release, what changed, and what we broke. Written the day it shipped.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Sprint 0 — foundation, research, spec freeze</title>
+      <link>https://wispernote.com/changelog/#sprint-0</link>
+      <guid isPermaLink="false">wispernote-development-sprint-0</guid>
+      <pubDate>Tue, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Development, not a release. The monorepo, seven architecture decisions, two de-risking spikes, a hello-world on every one of the six surfaces, the frozen spec, and a placeholder page live on the domain. No public build has shipped and there is nothing to download. Known issues are listed on the changelog page.</description>
+    </item>
+  </channel>
+</rss>
