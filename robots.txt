@@ -1,2 +1,21 @@
+# Wisper Note — pre-launch crawl policy.
+#
+# The marketing pages stay out of the index until there is a product to
+# download. Ranking a page that says "there is nothing to download yet" spends
+# the first crawl on the wrong impression, and the flip costs one line here.
+#
+# The two legal documents are the exception, and deliberately so. Both the
+# Chrome Web Store and Edge Add-ons require a publicly reachable privacy policy
+# URL naming our processors before they will accept a submission, and a blanket
+# Disallow makes that URL uncrawlable no matter what the page's own meta robots
+# tag says — the crawler never gets far enough to read it. /privacy and /terms
+# carry `index: true` in their own metadata; this file has to agree.
+#
+# At launch: delete the Disallow line, keep the Sitemap line.
+
 User-agent: *
+Allow: /privacy/
+Allow: /terms/
 Disallow: /
+
+Sitemap: https://wispernote.com/sitemap.xml

@@ -1,0 +1,749 @@
+{
+  "generated": "2026-09-02",
+  "build": {
+    "app": "Wisper Note macOS 0.1.0 (Tauri debug bundle)",
+    "provider": "development mock (no Deepgram/Anthropic key on the capture machine)"
+  },
+  "note": "Every capture is window-only (screencapture -l <window id>). The pill is a non-activating NSPanel at layer 25, which scripts/tools/winshot.sh cannot see (DESIGN-PROGRAM.md DEFECT DP-5); it was captured with an all-layer window lister. All transcript text comes from the development mock provider, so any page using these images must carry the §5.4 caption.",
+  "caption": "macOS, build 0.1.0. Transcript text is from the development mock provider.",
+  "screenshots": [
+    {
+      "inventory": 1,
+      "file": "pill--listening--dark@2x.png",
+      "webp": "pill--listening--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "listening",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The Wisper Note dictation pill on a dark ground, in its listening state: an amber status dot, the inline mark with its ripple bowed on the upper text line, the word Listening, and a 0:04 timer beside a cancel cross."
+    },
+    {
+      "inventory": 1,
+      "file": "pill--listening--light@2x.png",
+      "webp": "pill--listening--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "listening",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The Wisper Note dictation pill on a light ground, in its listening state: an amber status dot, the inline mark with its ripple, the word Listening, and a 0:04 timer beside a cancel cross."
+    },
+    {
+      "inventory": 2,
+      "file": "pill--inserted--dark@2x.png",
+      "webp": "pill--inserted--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "inserted",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The dictation pill on a dark ground after a dictation, reading Inserted 24 words in 4.2 s beside a green success dot. There is no cancel control: cancel is never offered once the text is going out."
+    },
+    {
+      "inventory": 2,
+      "file": "pill--inserted--light@2x.png",
+      "webp": "pill--inserted--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "inserted",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The dictation pill on a light ground after a dictation, reading Inserted 24 words in 4.2 s beside a green success dot, with no cancel control."
+    },
+    {
+      "inventory": 3,
+      "file": "pill-wide--clipboard-fallback--dark@2x.png",
+      "webp": "pill-wide--clipboard-fallback--dark@2x.webp",
+      "surface": "Dictation pill (wide)",
+      "state": "clipboard-fallback",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 768,
+        "h": 275
+      },
+      "cssSize": {
+        "w": 384,
+        "h": 137.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The wide dictation pill on a dark ground: a green tick, the line Text copied. Press Command V to paste., and two buttons, Show text and Dismiss. This is the state Wisper Note falls back to when it cannot type into the field."
+    },
+    {
+      "inventory": 3,
+      "file": "pill-wide--clipboard-fallback--light@2x.png",
+      "webp": "pill-wide--clipboard-fallback--light@2x.webp",
+      "surface": "Dictation pill (wide)",
+      "state": "clipboard-fallback",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 768,
+        "h": 275
+      },
+      "cssSize": {
+        "w": 384,
+        "h": 137.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The wide dictation pill on a light ground: a green tick, the line Text copied. Press Command V to paste., and the Show text and Dismiss buttons."
+    },
+    {
+      "inventory": 4,
+      "file": "menu-bar--idle--dark@2x.png",
+      "webp": "menu-bar--idle--dark@2x.webp",
+      "surface": "macOS menu bar",
+      "state": "idle",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 498,
+        "h": 968
+      },
+      "cssSize": {
+        "w": 249,
+        "h": 484
+      },
+      "scale": "2x",
+      "source": "docs/evidence/app/desktop-tray-menu.png",
+      "alt": "The Wisper Note menu bar menu, open, on a dark system appearance. A disabled status line reads Ready, above Start dictation with an Option Space keycap, Hands-free dictation, a disabled Command mode, transcript and history items, Microphone and Tone submenus, Privacy mode, Pause Wisper Note, Settings, Check for updates, Help and Quit."
+    },
+    {
+      "inventory": 4,
+      "file": "menu-bar--idle--light@2x.png",
+      "webp": "menu-bar--idle--light@2x.webp",
+      "surface": "macOS menu bar",
+      "state": "idle",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 498,
+        "h": 968
+      },
+      "cssSize": {
+        "w": 249,
+        "h": 484
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": "The same Wisper Note menu bar menu on a light system appearance, its status line reading Ready."
+    },
+    {
+      "inventory": 5,
+      "file": "settings-general--populated--dark@2x.png",
+      "webp": "settings-general--populated--dark@2x.webp",
+      "surface": "Settings — General",
+      "state": "populated",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 5,
+      "file": "settings-general--populated--light@2x.png",
+      "webp": "settings-general--populated--light@2x.webp",
+      "surface": "Settings — General",
+      "state": "populated",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 6,
+      "file": "settings-dictionary--populated--dark@2x.png",
+      "webp": "settings-dictionary--populated--dark@2x.webp",
+      "surface": "Settings — Dictionary",
+      "state": "populated",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 6,
+      "file": "settings-dictionary--populated--light@2x.png",
+      "webp": "settings-dictionary--populated--light@2x.webp",
+      "surface": "Settings — Dictionary",
+      "state": "populated",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 7,
+      "file": "settings-snippets--populated--dark@2x.png",
+      "webp": "settings-snippets--populated--dark@2x.webp",
+      "surface": "Settings — Snippets",
+      "state": "populated",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 7,
+      "file": "settings-snippets--populated--light@2x.png",
+      "webp": "settings-snippets--populated--light@2x.webp",
+      "surface": "Settings — Snippets",
+      "state": "populated",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 8,
+      "file": "settings-tone--populated--dark@2x.png",
+      "webp": "settings-tone--populated--dark@2x.webp",
+      "surface": "Settings — Tone",
+      "state": "populated",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 8,
+      "file": "settings-tone--populated--light@2x.png",
+      "webp": "settings-tone--populated--light@2x.webp",
+      "surface": "Settings — Tone",
+      "state": "populated",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 9,
+      "file": "settings-history--populated--dark@2x.png",
+      "webp": "settings-history--populated--dark@2x.webp",
+      "surface": "Settings — History",
+      "state": "populated",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 9,
+      "file": "settings-history--populated--light@2x.png",
+      "webp": "settings-history--populated--light@2x.webp",
+      "surface": "Settings — History",
+      "state": "populated",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 10,
+      "file": "settings-privacy--privacy-on--dark@2x.png",
+      "webp": "settings-privacy--privacy-on--dark@2x.webp",
+      "surface": "Settings — Privacy",
+      "state": "privacy-on",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 10,
+      "file": "settings-privacy--privacy-on--light@2x.png",
+      "webp": "settings-privacy--privacy-on--light@2x.webp",
+      "surface": "Settings — Privacy",
+      "state": "privacy-on",
+      "theme": "light",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 1149
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 574.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": 11,
+      "file": "onboarding-accessibility--granted--dark@2x.png",
+      "webp": "onboarding-accessibility--granted--dark@2x.webp",
+      "surface": "Onboarding step 3 — Accessibility",
+      "state": "granted",
+      "theme": "dark",
+      "slot": "card",
+      "pixels": {
+        "w": 1176,
+        "h": 849
+      },
+      "cssSize": {
+        "w": 588,
+        "h": 424.5
+      },
+      "scale": "2x",
+      "source": "docs/evidence/app/desktop-onboarding-3-accessibility.png",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--transcribing--dark@2x.png",
+      "webp": "pill--transcribing--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "transcribing",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--transcribing--light@2x.png",
+      "webp": "pill--transcribing--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "transcribing",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--polishing--dark@2x.png",
+      "webp": "pill--polishing--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "polishing",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--polishing--light@2x.png",
+      "webp": "pill--polishing--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "polishing",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--inserting--dark@2x.png",
+      "webp": "pill--inserting--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "inserting",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--inserting--light@2x.png",
+      "webp": "pill--inserting--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "inserting",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--whisper--dark@2x.png",
+      "webp": "pill--whisper--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "whisper",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--whisper--light@2x.png",
+      "webp": "pill--whisper--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "whisper",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--no-signal--dark@2x.png",
+      "webp": "pill--no-signal--dark@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "no-signal",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill--no-signal--light@2x.png",
+      "webp": "pill--no-signal--light@2x.webp",
+      "surface": "Dictation pill (compact)",
+      "state": "no-signal",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 576,
+        "h": 176
+      },
+      "cssSize": {
+        "w": 288,
+        "h": 88
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill-wide--error--dark@2x.png",
+      "webp": "pill-wide--error--dark@2x.webp",
+      "surface": "Dictation pill (wide)",
+      "state": "error",
+      "theme": "dark",
+      "slot": "inline",
+      "pixels": {
+        "w": 768,
+        "h": 275
+      },
+      "cssSize": {
+        "w": 384,
+        "h": 137.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    },
+    {
+      "inventory": "s",
+      "file": "pill-wide--error--light@2x.png",
+      "webp": "pill-wide--error--light@2x.webp",
+      "surface": "Dictation pill (wide)",
+      "state": "error",
+      "theme": "light",
+      "slot": "inline",
+      "pixels": {
+        "w": 768,
+        "h": 275
+      },
+      "cssSize": {
+        "w": 384,
+        "h": 137.5
+      },
+      "scale": "2x",
+      "source": "re-captured 2026-09-02",
+      "alt": null
+    }
+  ],
+  "absent": [
+    {
+      "inventory": 12,
+      "surface": "macOS System Settings -> Privacy & Security -> Accessibility",
+      "reason": "Not captured. The bundled debug build is not listed in the Accessibility pane on this machine (it reports Not granted and has never been added), so there is no Wisper Note row to photograph. Needs a signed install.",
+      "placeholder": null
+    },
+    {
+      "inventory": 13,
+      "surface": "Windows tray + Settings",
+      "reason": "No Windows hardware or VM in this environment (STATE.md risk R3). Sprint 4.",
+      "placeholder": null
+    },
+    {
+      "inventory": 14,
+      "surface": "Windows SmartScreen panel",
+      "reason": "No Windows hardware or VM in this environment (STATE.md risk R3). Sprint 4.",
+      "placeholder": null
+    },
+    {
+      "inventory": 15,
+      "surface": "/app dashboard -> Usage",
+      "reason": "The signed-in dashboard is Sprint 6 (DESIGN-PROGRAM.md §3.14). It does not exist yet.",
+      "placeholder": null
+    },
+    {
+      "inventory": 16,
+      "surface": "Chrome extension side panel",
+      "reason": "BLOCKED-9. The extension is built and runs, but Sprint 9 has not passed its gate; features.ts SHIPPED_THROUGH_SPRINT is 5 and platforms.ts has the Chrome row in-development. §5.3 forbids showing it.",
+      "placeholder": null
+    },
+    {
+      "inventory": 17,
+      "surface": "Chrome field affordance",
+      "reason": "BLOCKED-9, as above.",
+      "placeholder": null
+    },
+    {
+      "inventory": 18,
+      "surface": "iOS keyboard",
+      "reason": "BLOCKED-8. Built and driven on the iPhone 17 Pro simulator, but Sprint 8 has not passed its gate. §5.3 forbids showing it.",
+      "placeholder": "device-frame-phone--empty--{theme}.svg"
+    },
+    {
+      "inventory": 19,
+      "surface": "iOS companion app -> Dictate",
+      "reason": "BLOCKED-8, as above.",
+      "placeholder": "device-frame-phone--empty--{theme}.svg"
+    },
+    {
+      "inventory": 20,
+      "surface": "Android IME",
+      "reason": "BLOCKED-7. Built and driven on an API 36 emulator, but Sprint 7 has not passed its gate. §5.3 forbids showing it.",
+      "placeholder": "device-frame-phone--empty--{theme}.svg"
+    },
+    {
+      "inventory": 21,
+      "surface": "Command mode in a real app",
+      "reason": "F8 lands in Sprint 5. The tray item is present and disabled; the feature is not built.",
+      "placeholder": null
+    },
+    {
+      "inventory": 11,
+      "surface": "Onboarding step 3 - Accessibility, light theme and the `Checking...` status pill",
+      "reason": "Only the dark, already-granted variant exists. Reaching the request/Checking path means answering a live macOS permission prompt on the owner's machine, which this pass would not stage.",
+      "placeholder": null
+    }
+  ],
+  "placeholders": [
+    {
+      "file": "device-frame-phone--empty--light.svg",
+      "note": "DESIGN-PROGRAM.md §5.3: an empty phone outline with the mark and the label `Coming in a later release`. No invented UI inside. Colours read from packages/brand/tokens.json."
+    },
+    {
+      "file": "device-frame-phone--empty--dark.svg",
+      "note": "As above, dark ramp."
+    }
+  ]
+}
