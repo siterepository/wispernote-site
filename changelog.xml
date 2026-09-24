@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  DESIGN-PROGRAM.md §3.10 — "RSS at /changelog.xml".
-
-  A static file, because the site is a static export (next.config.ts sets
-  `output: 'export'`) and a route handler would be a server. It carries the
-  same entries as /changelog and nothing else: there is no release yet, so
-  there is no release item here either. The release job appends an <item> per
-  release when it appends the entry to apps/web/src/app/changelog/entries.ts;
-  the two are regenerated together or they drift.
--->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wisper Note — Changelog</title>
@@ -16,13 +6,62 @@
     <atom:link href="https://wispernote.com/changelog.xml" rel="self" type="application/rss+xml" />
     <description>Every release, what changed, and what we broke. Written the day it shipped.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Launch lane — Preview download, role-based disclosures, billing built</title>
+      <link>https://wispernote.com/changelog/#launch-lane-2026-09-24</link>
+      <guid isPermaLink="false">wispernote-development-launch-lane-2026-09-24</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Development, not a release. The macOS Preview download went live on this site with its SHA-256 beside it. Every disclosure on the site and in the app now describes each processor by what it does rather than by supplier, which is why the privacy policy's effective date and the terms' last-updated date moved to 2026-09-24. Sign-in, the free weekly cap and Pro checkout are built and unit-tested but switched off until the account service is provisioned. Known issues: Whether a quarantined, ad-hoc-signed download is offered Open Anyway on macOS 15 and 26 has not been tested from a browser download. Accounts, the cap and Pro have not run end to end: there is no hosted account service yet.</description>
+    </item>
+    <item>
+      <title>0.1.0</title>
+      <link>https://wispernote.com/changelog/#release-0.1.0</link>
+      <guid isPermaLink="false">wispernote-release-0.1.0</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release notes only; this version has no download. Added: First public macOS build (Apple silicon). Hold ⌥ Space, speak, let go. Today pane: words, dictations and estimated minutes saved for the past seven days, with the formula shown. History as a day-grouped timeline, 100 entries a page, with copy, raw transcript, dictionary and delete on every entry. Light theme by default, dark theme from the switch at the bottom of the sidebar. Changed: The sidebar groups the product panes at the top and pins Account, Privacy, Settings, Advanced and Help to the bottom. Every disclosure describes the transcription, cleanup and storage services by what they do rather than by supplier. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
+    <item>
+      <title>0.1.1</title>
+      <link>https://wispernote.com/changelog/#release-0.1.1</link>
+      <guid isPermaLink="false">wispernote-release-0.1.1</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release notes only; this version has no download. Added: Account pane: sign in from the app through wispernote.com (an emailed link, no password), see your plan and the words left this week, upgrade, manage billing, sign out. In this preview build the pane says accounts are not open yet. The dictation key now asks you to sign in, or tells you when a free week is spent, before the microphone opens — once a build carries the account service. Sample transcripts are labelled Sample, and the Today pane says plainly when a build has no transcription service. Changed: Nothing in the app names the services it runs on; each is described by what it does. The download is served as a file from wispernote.com with its SHA-256 beside it. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Accounts are not open yet: this build has no account service compiled in, so the Account pane says so and nothing is gated. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
+    <item>
+      <title>0.1.2</title>
+      <link>https://wispernote.com/changelog/#release-0.1.2</link>
+      <guid isPermaLink="false">wispernote-release-0.1.2</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release notes only; this version has no download. Changed: First-run setup: in a preview build the Accessibility step says the grant changes nothing yet and offers Skip for now, instead of steering you into a permission this build cannot use. The download card says exactly what the signature is (ad-hoc, no Apple Developer ID, not notarized); the won't-open guide adds what a checksum match proves and that the Open Anyway steps have not yet been tested from a browser download on any macOS version. Fixed: The changelog no longer describes itself as having published no release beside a release. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Accounts are not open yet: this build has no account service compiled in, so the Account pane says so and nothing is gated. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
+    <item>
+      <title>0.1.3</title>
+      <link>https://wispernote.com/changelog/#release-0.1.3</link>
+      <guid isPermaLink="false">wispernote-release-0.1.3</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release notes only; this version has no download. Changed: First-run setup in a preview build: Skip for now is the primary action on the Accessibility step and the System Settings button is secondary. One Skip button, not two. Every place that mentions Open Anyway now says that Apple documents it and that we have not yet tested it from a browser download on any macOS version. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Accounts are not open yet: this build has no account service compiled in, so the Account pane says so and nothing is gated. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
+    <item>
+      <title>0.1.4</title>
+      <link>https://wispernote.com/changelog/#release-0.1.4</link>
+      <guid isPermaLink="false">wispernote-release-0.1.4</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release notes only; this version has no download. Changed: Sign-in links are accepted only when they echo the code this app generated when it opened sign-in, so no web page can sign the app into an account you did not ask for. The weekly-cap message reads the real cap instead of a typed number. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Accounts are not open yet: this build has no account service compiled in, so the Account pane says so and nothing is gated. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
+    <item>
+      <title>0.1.5 — macOS</title>
+      <link>https://wispernote.com/changelog/#release-0.1.5</link>
+      <guid isPermaLink="false">wispernote-release-0.1.5</guid>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Release for macOS. Changed: Signing in from the app now gives the app a session of its own: the website hands over a single-use key instead of its own sign-in, so the two never interfere. A sign-in that launched the app from the link is recognised for fifteen minutes after a restart. Known issues: Preview build: the speech service is not connected yet, so a dictation replays a sample transcript and is marked Sample. It shows the app; it does not yet transcribe you. Typing into other apps is not connected in this build. The result goes to your clipboard and the pill tells you to press ⌘V. Accounts are not open yet: this build has no account service compiled in, so the Account pane says so and nothing is gated. Not signed with an Apple Developer ID and not notarized (ad-hoc signature only). Apple documents the first open as System Settings → Privacy &amp; Security → Open Anyway; we have not yet tested that route from a browser download. Apple silicon only. There is no Intel build. There is no auto-update. A new version is a new download.</description>
+    </item>
     <item>
       <title>Sprint 0 — foundation, research, spec freeze</title>
       <link>https://wispernote.com/changelog/#sprint-0</link>
       <guid isPermaLink="false">wispernote-development-sprint-0</guid>
-      <pubDate>Tue, 02 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Development, not a release. The monorepo, seven architecture decisions, two de-risking spikes, a hello-world on every one of the six surfaces, the frozen spec, and a placeholder page live on the domain. No public build has shipped and there is nothing to download. Known issues are listed on the changelog page.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Development, not a release. The monorepo, the seven architecture decisions behind it, two de-risking spikes, a hello-world on every one of the six surfaces, the frozen spec, and a placeholder page live on the domain. No product code that a person could use yet. Known issues: The iPhone keyboard handoff — keyboard extension to URL scheme to host app to shared container and back — is unproven until the simulator spike runs. The macOS Accessibility grant for a development build is a manual step in System Settings, so the injection spike and the end-to-end test cannot run without a person clicking it. Windows is only verifiable in continuous integration. There is no local Windows machine. The product name and the domain are both spelled without an h — Wisper Note, wispernote.com — and the owner has not yet ruled on whether that stays. Chrome Web Store developer registration has not been completed, and the extension cannot be submitted until it is. The website deploy script needs its credentials resolvable from the environment or the keychain, never from the repository.</description>
     </item>
   </channel>
 </rss>
