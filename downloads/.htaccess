@@ -1,0 +1,8 @@
+AddType application/x-apple-diskimage .dmg
+AddType text/plain .sha256
+<IfModule mod_headers.c>
+  <FilesMatch "\.(dmg|zip|exe|msi|apk|aab)$">
+    Header set Content-Disposition "attachment"
+    Header set X-Content-Type-Options "nosniff"
+  </FilesMatch>
+</IfModule>
